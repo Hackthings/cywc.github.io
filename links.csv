@@ -47,10 +47,12 @@ source,target,rel,cur
 구자열,구은아,child,1
 구자엽,구은희,child,1
 구자은,장인영,spourse,1
+구자철,홍정원,spourse,1
 구자학,구명진,child,1
 구자학,이숙희1,spourse,1
 구자혜,이선용,child,1
 구자혜,이재연,spourse,1
+구자홍,구본웅,child,1
 구자훈,구문정,child,1
 구재서,구두회,child,1
 구재서,구인회,child,1
@@ -62,6 +64,8 @@ source,target,rel,cur
 구철회,구자훈,child,1
 구태회,구자명,child,1
 구태회,구자엽,child,1
+구태회,구자철,child,1
+구태회,구자홍,child,1
 구평회,구자균,child,1
 구평회,구자열,child,1
 구평회,구자용,child,1
@@ -265,6 +269,7 @@ source,target,rel,cur
 김익기,김형신,child,1
 김익기,김형일,child,1
 김인,안미생,spourse,1
+김인규,김현강,child,1
 김인동,김은숙,child,1
 김인득,김희근,child,1
 김인득,김희용,child,1
@@ -346,6 +351,7 @@ source,target,rel,cur
 김한수,김중건,child,1
 김한수,김중명,child,1
 김한수,김중원,child,1
+김현강,정정이,spourse,1
 김현경,이상균,spourse,1
 김현주,허윤영,spourse,1
 김형국,박재숙,spourse,1
@@ -429,6 +435,8 @@ source,target,rel,cur
 민헌기,이운경,spourse,1
 민형식,민XX1,child,1
 박XX1,이문옥,spourse,1
+박XX2,박무신,child,1
+박XX2,박정신,child,1
 박건배,김형신,spourse,1
 박경아,전재용,spourse,0
 박경애,배영환,spourse,1
@@ -439,6 +447,9 @@ source,target,rel,cur
 박근령,신동욱,spourse,1
 박남규,박재숙,child,1
 박내회,서송숙,spourse,0
+박담회,박원재,child,1
+박담회,박필재,child,1
+박담회,홍송원,spourse,1
 박동복,박남구,child,1
 박동복,박명구,child,1
 박동복,박병구,child,1
@@ -1228,6 +1239,7 @@ source,target,rel,cur
 정몽우,정대선,child,1
 정몽우,정문선,child,1
 정몽우,정일선,child,1
+정몽윤,정정이,child,1
 정몽익,최은정,spourse,1
 정몽준,김영명,spourse,1
 정몽필,정유희,child,1
@@ -1281,6 +1293,7 @@ source,target,rel,cur
 정재은,정용진,child,1
 정재은,정유경1,child,1
 정재호,정규진,child,1
+정정이,김현강,spourse,1
 정주영,정경희,child,1
 정주영,정몽구,child,1
 정주영,정몽근,child,1
@@ -1552,6 +1565,8 @@ source,target,rel,cur
 현재현,이혜경,spourse,1
 현정은,정몽헌,spourse,1
 현준호,현영원,child,1
+홍XX1,홍송원,child,1
+홍XX1,홍정원,child,1
 홍경일,홍정욱,child,1
 홍금식,홍문자,child,1
 홍라영,노철수,spourse,1
@@ -1569,6 +1584,9 @@ source,target,rel,cur
 홍석현,홍정현,child,1
 홍소자,한상은,child,1
 홍소자,한승수,spourse,1
+홍송원,박담회,spourse,1
+홍송원,박원재,child,1
+홍송원,박필재,child,1
 홍순일,육인순,spourse,1
 홍순일,홍세표,child,1
 홍순일,홍소자,child,1
@@ -1580,6 +1598,7 @@ source,target,rel,cur
 홍재희,윤석민,spourse,1
 홍정도,윤선영,spourse,1
 홍정욱,손정희,spourse,1
+홍정원,구자철,spourse,1
 홍정자,유연상,spourse,1
 홍정현,허서홍,spourse,1
 홍지자,정영삼,spourse,1
