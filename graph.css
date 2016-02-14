@@ -38,7 +38,7 @@ svg .links .link {
 	opacity: 0.1;
 }
 svg .links .link.cur {
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 svg .grids line {

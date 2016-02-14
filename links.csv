@@ -1,4 +1,5 @@
 source,target,rel,cur
+강대균,박강자,spourse,1
 강석진,강정자,child,1
 강석천,윤화순,spourse,1
 강성진,강신애,child,1
@@ -437,6 +438,7 @@ source,target,rel,cur
 박XX1,이문옥,spourse,1
 박XX2,박무신,child,1
 박XX2,박정신,child,1
+박강자,강대균,spourse,1
 박건배,김형신,spourse,1
 박경아,전재용,spourse,0
 박경애,배영환,spourse,1
@@ -525,7 +527,11 @@ source,target,rel,cur
 박정희,박재옥,child,1
 박정희,박지만,child,1
 박정희,육영수,spourse,1
+박종구,이계옥,spourse,1
 박지만,서향희,spourse,1
+박찬구,박주형,child,1
+박찬구,박준경,child,1
+박찬구,위진영,spourse,1
 박철완,허지연,spourse,1
 박태규,장은순,spourse,1
 박태원,조도원,spourse,1
@@ -737,6 +743,12 @@ source,target,rel,cur
 오정석,이지은,spourse,1
 오탁근,오숙혜,child,1
 원석연,윤성희,spourse,1
+위진영,박주형,child,1
+위진영,박준경,child,1
+위진영,박찬구,spourse,1
+위창남,위진수,child,1
+위창남,위진영,child,1
+위창남,위진호,child,1
 유기연,유승필,child,1
 유기연,유일한,child,1
 유기연,유특한,child,1
@@ -882,6 +894,7 @@ source,target,rel,cur
 이경숙,이문조,spourse,1
 이경아,조진호,spourse,1
 이경훈,허승조,spourse,1
+이계옥,박종구,spourse,1
 이규광,장성희,spourse,1
 이규덕,이인출,child,1
 이규덕,이임출,child,1
@@ -914,6 +927,7 @@ source,target,rel,cur
 이명박,이승연,child,1
 이명박,이시형,child,1
 이명박,이주연2,child,1
+이명선,이계옥,child,1
 이명세,이종덕,child,1
 이명신,정화섭,spourse,1
 이명희1,정용진,child,1
@@ -1405,9 +1419,6 @@ source,target,rel,cur
 차현영,김각중,spourse,1
 차현영,김담,child,1
 차현영,김준,child,1
-채XX1,채동규,child,1
-채XX1,채동선,child,1
-채XX1,채선엽,child,1
 채동규,윤정희,spourse,1
 채동선,최규남,spourse,1
 채몽인,장영신,spourse,1
@@ -1417,6 +1428,9 @@ source,target,rel,cur
 채몽인,채형석,child,1
 채은정,안리나,child,1
 채은정,안용찬,spourse,1
+채중현,채동규,child,1
+채중현,채동선,child,1
+채중현,채선엽,child,1
 최강민,방성훈,spourse,1
 최경원,김종량,spourse,1
 최규남,채동선,spourse,1
