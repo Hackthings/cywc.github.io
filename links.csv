@@ -1014,6 +1014,8 @@ source,target,rel,cur
 이은혜,윤치영,spourse,1
 이의숙,구자승,spourse,1
 이인수,이주연1,child,1
+이인수,이주한,child,1
+이인수,최서원,spourse,1
 이인출,이준원,child,1
 이인희,조동길,child,1
 이인희,조동만,child,1
@@ -1054,6 +1056,7 @@ source,target,rel,cur
 이종수,이선희,child,1
 이종오,장혜순,spourse,1
 이종욱,이인수,child,1
+이종욱,이창수,child,1
 이주연1,방정오,spourse,1
 이주연2,이상주,spourse,1
 이주영,허창수,spourse,1
@@ -1429,6 +1432,9 @@ source,target,rel,cur
 최두고,최상룡,child,1
 최명석,이연희,spourse,1
 최상룡,서은숙,spourse,1
+최서원,이인수,spourse,1
+최서원,이주연1,child,1
+최서원,이주한,child,1
 최선희,이재찬,spourse,1
 최성환,최유진,spourse,1
 최순실,정윤회,spourse,0
