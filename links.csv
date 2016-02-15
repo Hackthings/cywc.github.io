@@ -140,7 +140,7 @@ source,target,rel,cur
 김백균,방윤미,spourse,1
 김범명,김수연,child,1
 김병관,김재열1,child,1
-김병관,김재호,child,1
+김병관,김재호1,child,1
 김병로,김재열2,child,1
 김복동,김미경1,child,1
 김봉환,김교숙,child,1
@@ -294,7 +294,8 @@ source,target,rel,cur
 김재열1,이서현,spourse,1
 김재열2,김종인,child,1
 김재춘,김태호,child,1
-김재호,이정원,spourse,1
+김재호1,이정원,spourse,1
+김재호2,나경원,spourse,1
 김재희,김문용,child,1
 김재희,김사순,child,1
 김재희,김삼순,child,1
@@ -388,6 +389,12 @@ source,target,rel,cur
 김희철,김성식,child,1
 김희철,김찬식,child,1
 김희철,허영자,spourse,1
+나XX1,나채성,child,1
+나XX1,나채오,child,1
+나경원,김재호2,spourse,1
+나채성,나경민,child,1
+나채성,나경원,child,1
+나채성,정효자,spourse,1
 남궁억,남궁자경,child,1
 남궁자경,윤광선,spourse,1
 남궁자경,윤성희,child,1
@@ -1074,7 +1081,7 @@ source,target,rel,cur
 이재훈1,양원용,spourse,1
 이절자,김종석,spourse,1
 이정연,이혜영,spourse,1
-이정원,김재호,spourse,1
+이정원,김재호1,spourse,1
 이정자,이병무,spourse,1
 이정환,이경렬,child,1
 이정환,이인호1,child,1
@@ -1347,6 +1354,11 @@ source,target,rel,cur
 정해영,정재문,child,1
 정혜신,허용수,spourse,1
 정화섭,이명신,spourse,1
+정효자,나경민,child,1
+정효자,나경원,child,1
+정효자,나채성,spourse,1
+정희영,정효자,child,1
+정희영,정훈기,child,1
 조남숙,이병도,spourse,1
 조남숙,이운경,child,1
 조남호,김영혜2,spourse,1
