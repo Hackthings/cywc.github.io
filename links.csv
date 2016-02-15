@@ -83,6 +83,8 @@ source,target,rel,cur
 김XX1,김한수,child,1
 김XX2,김은숙,spourse,1
 김XX3,민XX1,spourse,1
+김XX4,김원국,spourse,1
+김XX5,정진태,spourse,1
 김각중,김담,child,1
 김각중,김준,child,1
 김각중,차현영,spourse,1
@@ -159,6 +161,7 @@ source,target,rel,cur
 김상홍,김유주,child,1
 김상홍,김윤,child,1
 김상홍,차부영,spourse,1
+김서규,김성진,child,1
 김석동,한준희,spourse,1
 김석성,김종엽,child,1
 김석원,김지용,child,1
@@ -170,12 +173,15 @@ source,target,rel,cur
 김성곤,김석원,child,1
 김성곤,김인숙,child,1
 김성국,정청자,spourse,1
+김성수,김남,child,1
 김성수,김상겸,child,1
 김성수,김상기,child,1
 김성수,김상만,child,1
 김성수,김상석,child,1
 김성수,김상종,child,1
 김성수,김상흠,child,1
+김성진,김시한,child,1
+김성진,김정한,child,1
 김세권,박용언,spourse,1
 김세연,한상은,spourse,1
 김세택,김동범,child,1
@@ -246,7 +252,12 @@ source,target,rel,cur
 김운식,김대현,child,1
 김운식,김진찬,child,1
 김운식,장수금,spourse,1
+김원국,김XX4,spourse,1
 김원규,김영혜2,child,1
+김원전,김XX4,child,1
+김원전,김XX5,child,1
+김원전,김석순,child,1
+김원전,박XX3,spourse,1
 김유경,장세희,spourse,1
 김유동,장혜경,spourse,1
 김유주,윤영섭,spourse,1
@@ -438,6 +449,10 @@ source,target,rel,cur
 박XX1,이문옥,spourse,1
 박XX2,박무신,child,1
 박XX2,박정신,child,1
+박XX3,김XX4,child,1
+박XX3,김XX5,child,1
+박XX3,김석순,child,1
+박XX3,김원전,spourse,1
 박강자,강대균,spourse,1
 박건배,김형신,spourse,1
 박경아,전재용,spourse,0
@@ -528,6 +543,7 @@ source,target,rel,cur
 박정희,박지만,child,1
 박정희,육영수,spourse,1
 박종구,이계옥,spourse,1
+박지근,박XX3,child,1
 박지만,서향희,spourse,1
 박찬구,박주형,child,1
 박찬구,박준경,child,1
@@ -1325,6 +1341,7 @@ source,target,rel,cur
 정지윤,박성빈2,spourse,1
 정지혜,최창규,spourse,1
 정진숙,김유동,child,1
+정진태,김XX5,spourse,1
 정청자,김성국,spourse,1
 정태영,정명이,spourse,1
 정해영,정재문,child,1
