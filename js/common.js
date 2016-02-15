@@ -7,7 +7,7 @@
 	cywc.parseRawNodesAndLinks = function(nodesRaw, linksRaw) {
 		var graph = new jsnx.Graph();
 		var nodeMap = {};
-		
+
 		// Parse nodes
 		var nodes = nodesRaw.filter(function(d) {return d.name !== '';});
 		nodes.forEach(function(d) {
