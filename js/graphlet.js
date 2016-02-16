@@ -86,7 +86,7 @@
 			localLink.target = localNodeMap[localLink.target];
 			localLinks.push(localLink);
 		});
-		
+
 		var rootEl = d3.select(this)
 			.attr('width', width)
 			.attr('height', height)
@@ -94,7 +94,7 @@
 			.attr('transform', 'translate(' + MARGIN.L + ', ' + MARGIN.T + ')');
 		d3.select(this)
 			.append('defs')
-			.html('<marker id="arrowMarker" viewBox="0 -5 10 10" refX="22" refY="0" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,-5L10,0L0,5" fill="#000" /></marker>');
+			.html('<marker id="arrowMarker" viewBox="0 -4 8 8" refX="20" refY="0" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,-4L8,0L0,4" fill="#000" /></marker>');
 
 		var linksEl = rootEl.append('g').attr('class', 'links')
 			.selectAll('.link').data(localLinks).enter()
@@ -122,7 +122,7 @@
 			.attr('transform', function(d) {return 'translate(' + d.x + ', ' + d.y + ')';});
 		nodeGroup.append('circle')
 			.attr('fill', function(d) {return genderColorScale(d.gender);})
-			.attr('r', 6);
+			.attr('r', 4);
 		var mainText = nodeGroup.append('text').attr('class', 'main')
 			.attr('dx', 10)
 			.attr('dy', '11px');

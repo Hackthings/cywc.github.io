@@ -179,7 +179,7 @@ function main() {
       .classed('fixed', function (d) { return d.fixed })
       .select('circle')
       .transition()
-      .attr('r', function (d) { return d.expandable ? 9 : 6 })
+      .attr('r', function (d) { return d.expandable ? 6 : 4 })
       .attr('filter', function (d) { return d === activeNode ? 'url(#dropShadow)' : '' });
 
     nodeEls.exit()
@@ -218,7 +218,7 @@ function main() {
 		} else if(d.wiki) {
 			link = '<a href="' + d.wiki + '" target="_blank">More</a>';
 		}
-        
+
 		return '<td class="name">' + d.name + '</td><td class="briefs">' + d.briefs.join(', ') + '</td><td class="link">' + link + '</td>'
       })
       .on('click', clickTable)
@@ -548,7 +548,7 @@ function main() {
           y: node.y|0
 	}
       });
-    var minX = Infinity 
+    var minX = Infinity
     var minY = Infinity
     selectedNodes.forEach(function(node) {
       if(node.x < minX) minX = node.x
