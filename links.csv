@@ -1574,6 +1574,8 @@ source,target,rel,cur
 최현열,최은진,child,1
 추경석,추재연,child,1
 추재연,이지용,spourse,1
+한말숙,황병기,spourse,1
+한말숙,황준묵,child,1
 한무숙,김영기,child,1
 한무숙,김진흥,spourse,1
 한무숙,김호기,child,1
@@ -1585,6 +1587,9 @@ source,target,rel,cur
 한상준,이희현,spourse,1
 한상태,한준희,child,1
 한상태,한지현,child,1
+한석명,한말숙,child,1
+한석명,한무숙,child,1
+한석명,한복,child,1
 한성수,한대현,child,1
 한성수,한세현,child,1
 한성수,한인옥,child,1
@@ -1712,6 +1717,8 @@ source,target,rel,cur
 홍진기,홍석조,child,1
 홍진기,홍석준,child,1
 홍진기,홍석현,child,1
+황병기,한말숙,spourse,1
+황병기,황준묵,child,1
 황산덕,황영준,child,1
 황서림,정지선1,spourse,1
 황영준,황서림,child,1
