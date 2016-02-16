@@ -51,10 +51,11 @@ source,target,rel,cur
 구자경,구본무,child,1
 구자경,구훤미,child,1
 구자두,구본천,child,1
+구자두,이의숙,spourse,1
 구자명,구윤희,child,1
 구자명,조미연,spourse,1
 구자성,구본주,child,1
-구자승,이의숙,spourse,1
+구자승,홍승해,spourse,1
 구자열,구은아,child,1
 구자엽,구은희,child,1
 구자은,장인영,spourse,1
@@ -446,7 +447,9 @@ source,target,rel,cur
 남궁자경,윤자희,child,1
 남궁자경,윤정희,child,1
 남덕자,장세창,spourse,1
+남상수,남석우,child,1
 남상옥,남덕자,child,1
+남석우,정윤선,spourse,1
 남흥우,남기윤,child,1
 남흥우,윤완구,spourse,1
 노경수,정숙영,spourse,1
@@ -550,11 +553,13 @@ source,target,rel,cur
 박성용,박재영,child,1
 박세정,박내회,child,1
 박숙희,박XX1,child,1
+박승준,정윤미,spourse,1
 박승직,박두병,child,1
 박승직,박우병,child,1
 박영옥,김예리,child,1
 박영옥,김종필,spourse,1
 박영우,한유진,spourse,1
+박영주,박승준,child,1
 박용만,강신애,spourse,1
 박용만,박재원,child,1
 박용언,김세권,spourse,1
@@ -743,6 +748,7 @@ source,target,rel,cur
 신덕균,신영수,child,1
 신동욱,박근령,spourse,1
 신동윤,김희선,spourse,1
+신두식,정지이,spourse,1
 신명수,송길자,spourse,1
 신명수,신정화,child,1
 신병철,이은주,spourse,1
@@ -788,6 +794,10 @@ source,target,rel,cur
 신춘호,신동익,child,1
 신춘호,신윤경,child,1
 신춘호,신현주,child,1
+신현우,신두식,child,1
+신현우,신혜경,spourse,1
+신혜경,신두식,child,1
+신혜경,신현우,spourse,1
 신황균,신현성,child,1
 신희철,윤재명,spourse,1
 심상필,장의순,spourse,1
@@ -1114,7 +1124,8 @@ source,target,rel,cur
 이은주,신병철,spourse,1
 이은주,신영철,spourse,1
 이은혜,윤치영,spourse,1
-이의숙,구자승,spourse,1
+이의숙,구본천,child,1
+이의숙,구자두,spourse,1
 이인수,이주연1,child,1
 이인수,이주한,child,1
 이인수,최서원,spourse,1
@@ -1331,6 +1342,9 @@ source,target,rel,cur
 전재용,최정애,spourse,0
 전효선,윤상현,spourse,0
 정경진,정태영,child,1
+정경희,정윤미,child,1
+정경희,정윤선,child,1
+정경희,정희영2,spourse,1
 정광현,윤문희,spourse,1
 정권영,정택화,child,1
 정규진,장예순,spourse,1
@@ -1355,6 +1369,7 @@ source,target,rel,cur
 정몽준,김영명,spourse,1
 정몽필,정유희,child,1
 정몽필,정은희,child,1
+정몽헌,정지이,child,1
 정몽헌,현정은,spourse,1
 정문선,김선희,spourse,1
 정문원,최금자,spourse,1
@@ -1384,6 +1399,8 @@ source,target,rel,cur
 정유경1,문성욱,spourse,1
 정유경2,김종엽,spourse,1
 정유희,김지용,spourse,1
+정윤미,박승준,spourse,1
+정윤선,남석우,spourse,1
 정윤이,신성재,spourse,0
 정윤회,최순실,spourse,0
 정은희,주현,spourse,1
@@ -1416,6 +1433,7 @@ source,target,rel,cur
 정지선1,황서림,spourse,1
 정지선2,정의선,spourse,1
 정지윤,박성빈2,spourse,1
+정지이,신두식,spourse,1
 정지혜,최창규,spourse,1
 정진숙,김유동,child,1
 정진태,김XX5,spourse,1
@@ -1428,8 +1446,11 @@ source,target,rel,cur
 정효자,나경민,child,1
 정효자,나경원,child,1
 정효자,나채성,spourse,1
-정희영,정효자,child,1
-정희영,정훈기,child,1
+정희영1,정효자,child,1
+정희영1,정훈기,child,1
+정희영2,정경희,spourse,1
+정희영2,정윤미,child,1
+정희영2,정윤선,child,1
 조남숙,이병도,spourse,1
 조남숙,이운경,child,1
 조남호,김영혜2,spourse,1
@@ -1696,6 +1717,7 @@ source,target,rel,cur
 현일선,유승지,spourse,1
 현재현,이혜경,spourse,1
 현정은,정몽헌,spourse,1
+현정은,정지이,child,1
 현준호,현영원,child,1
 홍XX1,홍송원,child,1
 홍XX1,홍정원,child,1
@@ -1726,7 +1748,9 @@ source,target,rel,cur
 홍순일,홍재희,child,1
 홍순일,홍정자,child,1
 홍순일,홍지자,child,1
+홍승해,구자승,spourse,1
 홍은표,장덕진,spourse,1
+홍재선,홍승해,child,1
 홍재희,윤석민,spourse,1
 홍정도,윤선영,spourse,1
 홍정욱,손정희,spourse,1
