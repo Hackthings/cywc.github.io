@@ -242,17 +242,22 @@ function main() {
   function onForceTick() {
     if (!nodeEls) return
 
+	var MARGIN_R = CFG.MARGIN_R
     nodeEls.attr('transform', function (d) {
       if (!d.fixed) {
         if (CFG.Y_SCALE === 'birth') {
           // Move y into the boundary of birth range
-          if (d.birth !== null && (d.y < timeScale(d.birthRange[0]) || d.y > timeScale(d.birthRange[1]))) {
-            var targetY = Math.max(timeScale(d.birthRange[0]), Math.min(d.y, timeScale(d.birthRange[1])))
-            d.y = d.y - (d.y - targetY) * 0.8
+          if (d.birth !== null) {
+			var birthY0 = timeScale(d.birthRange[0])
+		    var birthY1 = timeScale(d.birthRange[1])
+		    if(d.y < birthY0 || d.y > birthY1) {
+              var targetY = Math.max(birthY0, Math.min(d.y, birthY1))
+              d.y = d.y - (d.y - targetY) * 0.8
+		    }
           }
         }
 
-        d.x = Math.max(0, Math.min(width - CFG.MARGIN_R, d.x))
+        d.x = Math.max(0, Math.min(width - MARGIN_R, d.x))
         d.y = Math.max(0, Math.min(height, d.y))
       }
 
@@ -297,6 +302,10 @@ function main() {
   function expandNode(node) {
     node.adjs.forEach(function (d) {
       d.node.selected = true
+	  if(d.node.x === undefined) {
+	    d.node.x = node.x;
+		d.node.y = node.y;
+	  }
     })
 
     // Update expandable flag
