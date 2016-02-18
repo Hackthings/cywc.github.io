@@ -506,7 +506,7 @@ source,target,rel,cur
 민영휘,민대식,child,1
 민영휘,민형식,child,1
 민원식,윤시선,spourse,1
-민헌기,이운경,spourse,1
+민헌기,이운경1,spourse,1
 민형식,민XX1,child,1
 박XX1,이문옥,spourse,1
 박XX2,박무신,child,1
@@ -1056,7 +1056,7 @@ source,target,rel,cur
 이미향,허영인,spourse,1
 이미향,허진수2,child,1
 이미향,허희수,child,1
-이병도,이운경,child,1
+이병도,이운경1,child,1
 이병도,조남숙,spourse,1
 이병무,이정자,spourse,1
 이병철,이건희,child,1
@@ -1126,7 +1126,10 @@ source,target,rel,cur
 이용균,이홍규,child,1
 이우성,구은아,spourse,1
 이우현,김수연,spourse,1
-이운경,민헌기,spourse,1
+이운경1,민헌기,spourse,1
+이운경2,홍범석,child,1
+이운경2,홍원식,spourse,1
+이운경2,홍진석,child,1
 이웅열,서창희,spourse,1
 이원달,이은정,child,1
 이원달,이철민,child,1
@@ -1221,6 +1224,7 @@ source,target,rel,cur
 이필석,이봉서,child,1
 이학만,이철,child,1
 이학철,이동혁,child,1
+이학철,이운경2,child,1
 이한동,이정원,child,1
 이한동,이지원,child,1
 이해욱,김선혜,spourse,1
@@ -1472,7 +1476,7 @@ source,target,rel,cur
 정희영2,정윤미,child,1
 정희영2,정윤선,child,1
 조남숙,이병도,spourse,1
-조남숙,이운경,child,1
+조남숙,이운경1,child,1
 조남호,김영혜2,spourse,1
 조남호,조원국,child,1
 조내벽,조명희2,child,1
@@ -1748,6 +1752,9 @@ source,target,rel,cur
 홍XX2,홍용표,child,1
 홍경일,홍정욱,child,1
 홍금식,홍문자,child,1
+홍두영,홍명식,child,1
+홍두영,홍우식,child,1
+홍두영,홍원식,child,1
 홍라영,노철수,spourse,1
 홍라희,이건희,spourse,1
 홍라희,이부진,child,1
@@ -1775,6 +1782,9 @@ source,target,rel,cur
 홍순일,홍지자,child,1
 홍승해,구자승,spourse,1
 홍승희,서승환,spourse,1
+홍원식,이운경2,spourse,1
+홍원식,홍범석,child,1
+홍원식,홍진석,child,1
 홍은표,장덕진,spourse,1
 홍재선,홍승해,child,1
 홍재희,윤석민,spourse,1
