@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>조중동 최단거리 혼맥</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/graph.css">
+  <style>
+  * {box-sizing: border-box;}
+
+  html {
+	  font-family: sans-serif;
+	  font-size: 14px;
+	  line-height: 1.5;
+  }
+  body {
+	max-width: 50rem;
+  	margin: 2rem auto;
+	padding: 0 1rem;
+  }
+  h1, h2, h3 {
+  	margin: 2em 0 1em;
+  }
+  svg {
+  	font-size: 12px;
+  }
+  a {
+  	text-decoration: none;
+  }
+  .explore {
+  	font-size: 10px;
+	vertical-align: super;
+  }
+  nav {
+	border-top: 1px solid #EEE;
+  }
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0.5rem 0;
+	font-size: 12px;
+	line-height: 1;
+  }
+  nav li {
+	float: left;
+	padding: 0 0.5rem;
+	border-right: 1px solid #666;
+  }
+  nav li:first-child {
+	  padding-left: 0;
+  }
+  nav li:last-child {
+	border-right-width: 0;
+  }
+  </style>
+  <script src="/js/vendor/d3.v3.min.js" charset="utf-8"></script>
+  <script src="/js/vendor/queue.min.js"></script>
+  <script src="/js/vendor/jsnetworkx.js"></script>
+  <script src="/js/kinship.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/graphlet.js"></script>
+</head>
+<body>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-71340893-1', 'auto');
+ga('send', 'pageview');
+</script>
+<h1 id="section">조중동 최단거리 혼맥</h1>
+
+<p>조선일보, 중앙일보, 동아일보를 잇는 최단거리 혼맥도</p>
+
+<p><a href="cjd.json" class="graphlet">조선일보</a></p>
+
+<p>주요 혼맥:</p>
+
+<ul>
+  <li><strong>중앙일보와 동아일보</strong>: <a href="/?q=홍석현,김재호1">path:홍석현,김재호1</a></li>
+  <li><strong>동아일보와 조선일보</strong>: <a href="/?q=김재호1,방상훈">path:김재호1,방상훈</a></li>
+  <li><strong>조선일보와 중앙일보</strong>: <a href="/?q=방상훈,홍석현">path:방상훈,홍석현</a></li>
+</ul>
+
+<p>관련 자료:</p>
+
+<ul>
+  <li><a href="chosun.html">조선일보 혼맥도 자세히 보기</a></li>
+  <li><a href="donga.html">동아일보 혼맥도 자세히 보기</a></li>
+</ul>
+
+
+
+<nav>
+	<ul>
+		<li><a href="/">가계도 검색기 홈</a></li>
+		<li><a href="/sitemap.html">사이트맵</a></li>
+		<li><a href="https://github.com/cywc/cywc.github.io">소스코드 및 데이터</a></li>
+	</ul>
+</nav>
+
+</body>
+</html>
