@@ -4,6 +4,117 @@
 	var dateFormat = d3.time.format('%Y-%m-%d');
 	var dateFormatYear = d3.time.format('%Y');
 
+	cywc.findFamily = function(node) {
+		// parents
+		var father = node.adjs.filter(function(n) {
+			return n.out === false && n.link.rel === 'child' && n.node.gender === 'M';
+		}).map(function(n) {return n.node;})[0];
+		var mother = node.adjs.filter(function(n) {
+			return n.out === false && n.link.rel === 'child' && n.node.gender === 'F';
+		}).map(function(n) {return n.node;})[0];
+
+		// spourses
+		var spourses = node.adjs.filter(function(n) {
+			return n.out === true && n.link.rel === 'spourse';
+		}).map(function(n) {return n.node;});
+
+		// children
+		for(var i = 0; i < spourses.length; i++) {
+			var spourse = spourses[i];
+			spourse.children = spourse.adjs.filter(function(n) {
+				return n.out === true && n.link.rel === 'child' && n.node.adjs.filter(function(n) {
+					return n.out === false && n.link.rel === 'child' && n.node === node;
+				}).length === 1;
+			}).map(function(n) {return n.node;});
+			spourse.children.sort(function(a, b) {return d3.ascending(a.birth, b.birth);});
+		}
+
+		return {
+			'parents': [father, mother],
+			'spourses': spourses,
+			'self': node
+		};
+	}
+
+	cywc.renderFamily = function(family, el) {
+		var rootEl = d3.select(el);
+
+		// parents
+		rootEl.append('ul')
+			.attr('class', 'parents')
+			.selectAll('li.parent')
+			.data(family.parents)
+			.enter()
+				.append('li')
+				.attr('class', 'parent')
+				.each(renderFamilyNode);
+
+		// marriages
+		if(family.spourses.length) {
+			var marriages = rootEl.append('ul')
+				.attr('class', 'marriages')
+				.selectAll('li.marriage')
+				.data(family.spourses)
+				.enter()
+					.append('li')
+					.attr('class', 'marriage');
+
+			// self + spourse
+			marriages
+				.append('div')
+				.attr('class', 'self')
+				.datum(family.self)
+				.each(renderFamilyNode);
+			marriages
+				.append('div')
+				.attr('class', 'spourse')
+				.each(renderFamilyNode);
+
+			// children
+			marriages
+				.append('ul')
+				.attr('class', 'children')
+				.selectAll('li.child')
+				.data(function(d) {return d.children;})
+				.enter()
+					.append('li')
+					.attr('class', 'child')
+					.each(renderFamilyNode);
+		} else {
+			rootEl.append('div')
+				.attr('class', 'single')
+				.append('div')
+				.attr('class', 'self')
+				.datum(family.self)
+				.each(renderFamilyNode);
+		}
+	}
+
+	renderFamilyNode = function(node) {
+		var nodeEl = d3.select(this)
+			.classed('family-node', true)
+			.classed('empty', !node)
+		if(!node) return;
+
+		nodeEl
+			.classed('gender-male', node.gender === 'M')
+			.classed('gender-female', node.gender === 'F')
+
+		nodeEl
+			.append('a')
+			.attr('class', 'name')
+			.attr('href', '/cards/' + node.name + '.html')
+			.text(node.name);
+		nodeEl
+			.append('span')
+			.attr('class', 'birth')
+			.text(node.birth ? (dateFormat(node.birth) || dateFormatYear(node.birth)) : '?');
+		nodeEl
+			.append('p')
+			.attr('class', 'brief')
+			.text(node.briefs[0]);
+	}
+
 	cywc.parseRawNodesAndLinks = function(nodesRaw, linksRaw) {
 		var graph = new jsnx.Graph();
 		var nodeMap = {};
@@ -87,7 +198,7 @@
 	function convertNameToLink(s, nodeMap) {
 		return s.replace(/\[(.+?)\]/g, function(m0, m1) {
 			var brief = nodeMap[m1].briefs[0] || '';
-			return (brief ? brief + ' ' : '') + '<a href="/?q=' + encodeURIComponent(m1) + '" class="graphlet name" target="_blank">' + m1 + '</a>';
+			return (brief ? brief + ' ' : '') + '<a href="/cards/' + encodeURIComponent(m1) + '" class="graphlet name" target="_blank">' + m1 + '</a>';
 		});
 	}
 

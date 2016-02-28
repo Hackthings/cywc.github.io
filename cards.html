@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>가계도 검색기</title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    font-family: sans-serif;
+    font-size: 12px;
+  }
+  body {
+    margin: 0;
+    height: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #66F;
+  }
+  </style>
+  <link rel="stylesheet" type="text/css" href="/card.css">
+  <script src="js/vendor/d3.v3.min.js" charset="utf-8"></script>
+  <script src="js/vendor/queue.min.js"></script>
+  <script src="js/vendor/jsnetworkx.js"></script>
+  <script src="js/kinship.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+	function main() {
+		queue()
+			.defer(d3.csv, 'nodes.csv')
+			.defer(d3.csv, 'links.csv')
+			.await(onDataLoad);
+	}
+
+	function onDataLoad(err, nodesRaw, linksRaw) {
+		var parsed = cywc.parseRawNodesAndLinks(nodesRaw, linksRaw);
+		var nodes = parsed.nodes;
+		d3.select('body').selectAll('.family-tree').data(nodes).enter()
+			.append('div')
+			.attr('class', 'family-tree')
+			.each(function(node) {
+				var family = cywc.findFamily(node);
+
+				var el = d3.select(this);
+				el.append('h2')
+					.text(node.name);
+
+				el.append('h3').text('태그');
+				el.append('ul').selectAll('.tag').data(node.tags === '' ? ['N/A'] : node.tags.split(';')).enter()
+					.append('li')
+					.attr('class', 'tag')
+					.text(String);
+
+				el.append('h3').text('약력');
+				el.append('ul').selectAll('.brief').data(node.briefs.length ? node.briefs : ['N/A']).enter()
+					.append('li')
+					.attr('class', 'brief')
+					.text(String);
+
+				el.append('h3').text('관련 페이지');
+				var links = [{name: '혼맥검색', url: '/?q=' + encodeURIComponent(node.name)}];
+				if(node['tpp_person_id']) links.push({name: '대한민국 정치의 모든 것', url: 'http://pokr.kr/person/' + node['tpp_person_id']});
+				if(node['wiki']) links.push({name: '위키', url: node['wiki']});
+				el.append('ul').selectAll('.link').data(links).enter()
+					.append('li')
+					.attr('class', 'link')
+					.append('a')
+					.attr('href', function(d) {return d.url;})
+					.text(function(d) {return d.name;});
+
+				el.append('h3').text('가계도');
+				cywc.renderFamily(family, this);
+			});
+	}
+
+	window.addEventListener('load', main)
+  </script>
+</head>
+<body>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-71340893-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

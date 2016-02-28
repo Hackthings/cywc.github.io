@@ -114,7 +114,7 @@
 			.selectAll('.node').data(localNodes).enter()
 			.append('a')
 			.attr('xlink:href', function(d) {
-				return 'http://cywc.github.io/?q=' + encodeURIComponent(d.name);
+				return 'http://cywc.github.io/cards/' + encodeURIComponent(d.name);
 			})
 			.attr('xlink:show', 'new')
 			.append('g')

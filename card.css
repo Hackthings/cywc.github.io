@@ -1,0 +1,64 @@
+.family-tree {
+}
+
+.family-tree .parents,
+.family-tree .children,
+.family-tree .single,
+.family-tree .marriages {
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+	clear: both;
+}
+.family-tree .marriages,
+.family-tree .single,
+.family-tree .children {
+	margin-left: 5rem;
+}
+
+.family-tree .family-node {
+	display: block;
+	width: 10rem;
+	padding: 0.5rem 1rem;
+	margin: 0.5rem 3px;
+	height: 4rem;
+}
+.family-tree .family-node a {
+	color: #000099;
+}
+.family-tree .family-node .birth {
+	font-size: 9px;
+	margin-left: 0.5rem;
+}
+.family-tree .family-node .brief {
+	font-size: 9px;
+	margin: 0.2rem 0;
+	line-height: 1em;
+	height: 1em;
+}
+
+.family-tree .family-node.self {
+	border: 1px solid #FFF;
+	box-shadow: 1px 1px 4px #666;
+}
+
+.family-tree .family-node.empty {
+	background-color: #E0E0E0;
+	content: "?";
+	line-height: 4rem;
+	height: 4rem;
+	text-align: center;
+	border: 1px dashed #AAAAAA;
+}
+.family-tree .family-node.gender-male {
+	background-color: #aec7e8;
+}
+.family-tree .family-node.gender-female {
+	background-color: #ff9896;
+}
+
+.family-tree .marriage > .family-node,
+.family-tree .parents > .family-node {
+	float: left;
+}
+
