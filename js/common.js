@@ -159,7 +159,8 @@
 
 	cywc.shortestPath = function(graph, source, target) {
 		try {
-			return jsnx.dijkstraPath(graph, {source: source.name, target: target.name});
+			var result = jsnx.dijkstraPath(graph, {source: source.name, target: target.name});
+			return typeof(result) === 'string' ? [result] : result;
 		} catch(e) {
 			return null;
 		}

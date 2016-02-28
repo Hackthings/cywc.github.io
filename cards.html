@@ -23,6 +23,7 @@
   }
   </style>
   <link rel="stylesheet" type="text/css" href="/card.css">
+  <link rel="stylesheet" type="text/css" href="/graph.css">
   <script src="js/vendor/d3.v3.min.js" charset="utf-8"></script>
   <script src="js/vendor/queue.min.js"></script>
   <script src="js/vendor/jsnetworkx.js"></script>
@@ -39,6 +40,18 @@
 	function onDataLoad(err, nodesRaw, linksRaw) {
 		var parsed = cywc.parseRawNodesAndLinks(nodesRaw, linksRaw);
 		var nodes = parsed.nodes;
+		var nodeMap = parsed.nodeMap;
+		var graph = parsed.graph;
+
+		// Find top 10 central nodes
+		var centrals = [];
+		jsnx.betweennessCentrality(graph).forEach(function(v, k) {
+			centrals.push({key: k, value: v});
+		});
+		centrals.sort(function(a, b) {return d3.descending(a.value, b.value);});
+		centrals = centrals.splice(0, 10);
+
+		// render cards
 		d3.select('body').selectAll('.family-tree').data(nodes).enter()
 			.append('div')
 			.attr('class', 'family-tree')
@@ -61,6 +74,31 @@
 					.attr('class', 'brief')
 					.text(String);
 
+				el.append('h3').text('주요 혼맥');
+				var paths = [];
+				for(var i = 0; i < centrals.length; i++) {
+					if(paths.length >= 5) break;
+
+					var path = cywc.shortestPath(graph, node, nodeMap[centrals[i].key]);
+					// ignore trivial paths (too short or too long)
+					if(!path || path.length < 3 || path.length > 10) continue;
+					paths.push(path);
+				}
+				paths.sort(function(a, b) {return d3.descending(a.length, b.length);});
+
+				el.append('ul').selectAll('.path').data(paths.length ? paths : []).enter()
+					.append('li')
+					.attr('class', 'path')
+					.append('span')
+					.html(function(d) {
+						return cywc.composeSentence(d, nodeMap) + '&nbsp;';
+					})
+					.append('a')
+					.html('[탐색]')
+					.attr('href', function(d) {return '/?q=' + encodeURIComponent(d[0]) + ',' + encodeURIComponent	(d[d.length - 1]);})
+					.attr('target', '_blank')
+					.attr('class', 'explore');
+
 				el.append('h3').text('관련 페이지');
 				var links = [{name: '혼맥검색', url: '/?q=' + encodeURIComponent(node.name)}];
 				if(node['tpp_person_id']) links.push({name: '대한민국 정치의 모든 것', url: 'http://pokr.kr/person/' + node['tpp_person_id']});
@@ -74,6 +112,8 @@
 
 				el.append('h3').text('가계도');
 				cywc.renderFamily(family, this);
+
+				document.body.setAttribute('class', 'done');
 			});
 	}
 
