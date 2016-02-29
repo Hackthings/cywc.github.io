@@ -29,10 +29,18 @@
 			spourse.children.sort(function(a, b) {return d3.ascending(a.birth, b.birth);});
 		}
 
+		// children w/o spourses
+		var otherChildren = node.adjs.filter(function(n) {
+			return n.out === true && n.link.rel === 'child' && n.node.adjs.filter(function(n) {
+				return n.out === false && n.link.rel === 'child';
+			}).length === 1;
+		}).map(function(n) {return n.node;});
+
 		return {
 			'parents': [father, mother],
 			'spourses': spourses,
-			'self': node
+			'self': node,
+			'otherChildren': otherChildren
 		};
 	}
 
@@ -81,12 +89,24 @@
 					.attr('class', 'child')
 					.each(renderFamilyNode);
 		} else {
-			rootEl.append('div')
-				.attr('class', 'single')
+			var single = rootEl.append('div')
+				.attr('class', 'single');
+			single
 				.append('div')
 				.attr('class', 'self')
 				.datum(family.self)
 				.each(renderFamilyNode);
+
+			// children
+			single
+				.append('ul')
+				.attr('class', 'children')
+				.selectAll('li.child')
+				.data(family.otherChildren)
+				.enter()
+					.append('li')
+					.attr('class', 'child')
+					.each(renderFamilyNode);
 		}
 	}
 
