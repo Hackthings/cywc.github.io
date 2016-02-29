@@ -48,6 +48,9 @@
 		jsnx.betweennessCentrality(graph).forEach(function(v, k) {
 			centrals.push({key: k, value: v});
 		});
+		centrals = centrals.filter(function(kv) {
+			return nodeMap[kv.key].briefs.length !== 0;
+		});
 		centrals.sort(function(a, b) {return d3.descending(a.value, b.value);});
 		centrals = centrals.splice(0, 8);
 
