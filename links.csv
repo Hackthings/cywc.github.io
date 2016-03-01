@@ -225,6 +225,7 @@ source,target,rel,cur
 김석동,한준희,spourse,1
 김석성,김종엽,child,1
 김석원,김지용,child,1
+김석원,박문순,spourse,1
 김선정,김상범,spourse,1
 김선집,김자경,child,1
 김선협,박은형,spourse,1
@@ -319,6 +320,7 @@ source,target,rel,cur
 김용하,김우중,child,1
 김우중,김선정,child,1
 김우중,김선협,child,1
+김우중,정희자,spourse,1
 김운식,김대의,child,1
 김운식,김대중,child,1
 김운식,김대현,child,1
@@ -580,6 +582,8 @@ source,target,rel,cur
 박경아,전재용,spourse,0
 박경애,배영환,spourse,1
 박경원,서미경,spourse,1
+박계희,최종현,spourse,1
+박계희,최태원,child,1
 박귀희,은용표,spourse,1
 박귀희,은희만,child,1
 박근령,류청,spourse,0
@@ -604,6 +608,8 @@ source,target,rel,cur
 박무신,박만송,child,1
 박문덕,박재홍,child,1
 박문덕,박태영,child,1
+박문순,김석원,spourse,1
+박문순,김지용,child,1
 박문효,박세용,child,1
 박문효,박세진,child,1
 박병규,박건배,child,1
@@ -1115,6 +1121,9 @@ source,target,rel,cur
 이동녕,이승무,child,1
 이동녕,이윤무,child,1
 이동보,김예리,spourse,0
+이동섭,이기택,child,1
+이동섭,이기화,child,1
+이동섭,이선애,child,1
 이동욱,최예정,spourse,1
 이동원,이정훈,child,1
 이동진,서옥로,spourse,1
@@ -1189,6 +1198,11 @@ source,target,rel,cur
 이상주,이주연2,spourse,1
 이서현,김재열1,spourse,1
 이석훈,육해화,spourse,1
+이선애,이경훈,child,1
+이선애,이영진,child,1
+이선애,이임룡,spourse,1
+이선애,이재훈1,child,1
+이선애,이호진,child,1
 이선영,방성훈,child,1
 이선영,방우영,spourse,1
 이선영,방윤미,child,1
@@ -1280,6 +1294,7 @@ source,target,rel,cur
 이일향,주진규,child,1
 이일향,주진우,child,1
 이임룡,이경훈,child,1
+이임룡,이선애,spourse,1
 이임룡,이영진,child,1
 이임룡,이재훈1,child,1
 이임룡,이호진,child,1
@@ -1327,6 +1342,7 @@ source,target,rel,cur
 이준범,구근희,spourse,1
 이준용1,이해욱,child,1
 이준용1,이해창,child,1
+이준용1,한경진,spourse,1
 이준용2,이상균,child,1
 이준용3,이진완,child,1
 이중홍,김명애,spourse,1
@@ -1665,6 +1681,9 @@ source,target,rel,cur
 정희영3,김근수,child,1
 정희영3,김영주,spourse,1
 정희영3,김윤수,child,1
+정희자,김선정,child,1
+정희자,김선협,child,1
+정희자,김우중,spourse,1
 조남숙,이병도,spourse,1
 조남숙,이운경1,child,1
 조남호,김영혜2,spourse,1
@@ -1779,6 +1798,7 @@ source,target,rel,cur
 채중현,채동선,child,1
 채중현,채선엽,child,1
 채형석,채문선,child,1
+채형석,홍미경,spourse,1
 최강민,방성훈,spourse,1
 최경원,김종량,spourse,1
 최규남,채동선,spourse,1
@@ -1835,6 +1855,7 @@ source,target,rel,cur
 최종분,이인환,child,1
 최종분,이한용,spourse,1
 최종욱,조동옥,spourse,1
+최종현,박계희,spourse,1
 최종현,최태원,child,1
 최주호,최승진,child,1
 최창규,정지혜,spourse,1
@@ -1869,6 +1890,9 @@ source,target,rel,cur
 하정임,구훤미,child,1
 하효락,하국선,child,1
 하효준,하택선,child,1
+한경진,이준용1,spourse,1
+한경진,이해욱,child,1
+한경진,이해창,child,1
 한말숙,황병기,spourse,1
 한말숙,황준묵,child,1
 한무숙,김영기,child,1
@@ -2000,6 +2024,8 @@ source,target,rel,cur
 홍문신,홍지현,child,1
 홍문자,조양래,spourse,1
 홍문자,조현범,child,1
+홍미경,채문선,child,1
+홍미경,채형석,spourse,1
 홍사덕,임경미,spourse,1
 홍석현,신연균,spourse,1
 홍석현,홍정도,child,1
