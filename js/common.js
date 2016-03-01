@@ -66,7 +66,6 @@
 				.data(family.spouses)
 				.enter()
 					.append('li')
-					.attr('itemprop', 'spouse')
 					.attr('class', 'marriage');
 
 			// self + spouse
