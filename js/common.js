@@ -124,12 +124,15 @@
 		nodeEl
 			.classed('gender-male', node.gender === 'M')
 			.classed('gender-female', node.gender === 'F')
+			.attr('itemscope', '')
+			.attr('itemtype', 'http://schema.org/Person')
 
 		nodeEl
 			.append('a')
 			.attr('class', 'name')
-			.attr('itemprop', 'name')
 			.attr('href', '/cards/' + node.name + '.html')
+			.append('span')
+			.attr('itemprop', 'name')
 			.text(node.name);
 		nodeEl
 			.append('span')
