@@ -59,11 +59,14 @@
 		d3.select('body').selectAll('.family-tree').data(nodes).enter()
 			.append('div')
 			.attr('class', 'family-tree')
+			.attr('itemscope', '')
+			.attr('itemtype', 'http://schema.org/Person')
 			.each(function(node) {
 				var family = cywc.findFamily(node);
 
 				var el = d3.select(this);
 				el.append('h2')
+					.attr('itemprop', 'name')
 					.text(node.name);
 
 				el.append('h3').text('태그');
@@ -76,6 +79,7 @@
 				el.append('ul').selectAll('.brief').data(node.briefs.length ? node.briefs : ['N/A']).enter()
 					.append('li')
 					.attr('class', 'brief')
+					.attr('itemprop', 'jobTitle')
 					.text(String);
 
 				el.append('h3').text('주요 혼맥');

@@ -32,7 +32,7 @@ function main() {
     .domain(['M', 'F'])
     .range(['#1f77b4', '#d62728'])
   var relColorScale = d3.scale.ordinal()
-    .domain(['child', 'spourse'])
+    .domain(['child', 'spouse'])
     .range(['#666666', '#d62728'])
 
   var force = d3.layout.force()

@@ -13,23 +13,23 @@
 			return n.out === false && n.link.rel === 'child' && n.node.gender === 'F';
 		}).map(function(n) {return n.node;})[0];
 
-		// spourses
-		var spourses = node.adjs.filter(function(n) {
-			return n.out === true && n.link.rel === 'spourse';
+		// spouses
+		var spouses = node.adjs.filter(function(n) {
+			return n.out === true && n.link.rel === 'spouse';
 		}).map(function(n) {return n.node;});
 
 		// children
-		for(var i = 0; i < spourses.length; i++) {
-			var spourse = spourses[i];
-			spourse.children = spourse.adjs.filter(function(n) {
+		for(var i = 0; i < spouses.length; i++) {
+			var spouse = spouses[i];
+			spouse.children = spouse.adjs.filter(function(n) {
 				return n.out === true && n.link.rel === 'child' && n.node.adjs.filter(function(n) {
 					return n.out === false && n.link.rel === 'child' && n.node === node;
 				}).length === 1;
 			}).map(function(n) {return n.node;});
-			spourse.children.sort(function(a, b) {return d3.ascending(a.birth, b.birth);});
+			spouse.children.sort(function(a, b) {return d3.ascending(a.birth, b.birth);});
 		}
 
-		// children w/o spourses
+		// children w/o spouses
 		var otherChildren = node.adjs.filter(function(n) {
 			return n.out === true && n.link.rel === 'child' && n.node.adjs.filter(function(n) {
 				return n.out === false && n.link.rel === 'child';
@@ -38,7 +38,7 @@
 
 		return {
 			'parents': [father, mother],
-			'spourses': spourses,
+			'spouses': spouses,
 			'self': node,
 			'otherChildren': otherChildren
 		};
@@ -55,19 +55,21 @@
 			.enter()
 				.append('li')
 				.attr('class', 'parent')
+				.attr('itemprop', 'parent')
 				.each(renderFamilyNode);
 
 		// marriages
-		if(family.spourses.length) {
+		if(family.spouses.length) {
 			var marriages = rootEl.append('ul')
 				.attr('class', 'marriages')
 				.selectAll('li.marriage')
-				.data(family.spourses)
+				.data(family.spouses)
 				.enter()
 					.append('li')
+					.attr('itemprop', 'spouse')
 					.attr('class', 'marriage');
 
-			// self + spourse
+			// self + spouse
 			marriages
 				.append('div')
 				.attr('class', 'self')
@@ -75,7 +77,8 @@
 				.each(renderFamilyNode);
 			marriages
 				.append('div')
-				.attr('class', 'spourse')
+				.attr('class', 'spouse')
+				.attr('itemprop', 'spouse')
 				.each(renderFamilyNode);
 
 			// children
@@ -87,6 +90,7 @@
 				.enter()
 					.append('li')
 					.attr('class', 'child')
+					.attr('itemprop', 'children')
 					.each(renderFamilyNode);
 		} else {
 			var single = rootEl.append('div')
@@ -106,6 +110,7 @@
 				.enter()
 					.append('li')
 					.attr('class', 'child')
+					.attr('itemprop', 'children')
 					.each(renderFamilyNode);
 		}
 	}
@@ -123,6 +128,7 @@
 		nodeEl
 			.append('a')
 			.attr('class', 'name')
+			.attr('itemprop', 'name')
 			.attr('href', '/cards/' + node.name + '.html')
 			.text(node.name);
 		nodeEl
@@ -132,6 +138,7 @@
 		nodeEl
 			.append('p')
 			.attr('class', 'brief')
+			.attr('itemprop', 'jobTitle')
 			.text(node.briefs[0]);
 	}
 
