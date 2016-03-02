@@ -8,3 +8,5 @@
 *   [삼성가 인맥지도](http://exifeedi.tistory.com/138)
 *   [재벌의 경영지배구조와 인맥 혼맥](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=576788)
 *   [친일과 망각: 뉴스타파](http://815.newstapa.org/#/)
+*   [비즈니스 포스트 인물검색](http://www.businesspost.co.kr/human/hd_list.html)
+
