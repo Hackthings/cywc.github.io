@@ -249,6 +249,7 @@ source,target,rel,cur
 김세권,박용언,spouse,1
 김세연,한상은,spouse,1
 김세택,김동범,child,1
+김소영,박정원,spouse,1
 김수연,이우현,spouse,1
 김수혜,정몽용,spouse,1
 김순영,곽낙원,spouse,1
@@ -363,6 +364,7 @@ source,target,rel,cur
 김익기,김형일,child,1
 김인,안미생,spouse,1
 김인규,김현강,child,1
+김인기,김소영,child,1
 김인동,김은숙,child,1
 김인득,김희근,child,1
 김인득,김희용,child,1
@@ -604,6 +606,7 @@ source,target,rel,cur
 박두병,박용언,child,1
 박두병,박용오,child,1
 박두병,박용욱,child,1
+박두병,박용현,child,1
 박만송,박원석,child,1
 박만송,정상례,spouse,1
 박무신,박만송,child,1
@@ -636,6 +639,9 @@ source,target,rel,cur
 박영옥,김종필,spouse,1
 박영우,한유진,spouse,1
 박영주,박승준,child,1
+박용곤,박정원,child,1
+박용곤,박지원,child,1
+박용곤,박혜원,child,1
 박용만,강신애,spouse,1
 박용만,박재원,child,1
 박용언,김세권,spouse,1
@@ -672,6 +678,7 @@ source,target,rel,cur
 박정구,박은혜,child,1
 박정구,박철완,child,1
 박정신,박담회,child,1
+박정원,김소영,spouse,1
 박정희,김호남,spouse,0
 박정희,박근령,child,1
 박정희,박근혜,child,1
