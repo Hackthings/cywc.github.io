@@ -187,6 +187,7 @@ source,target,rel,cur
 김명호,윤자희,spouse,1
 김무성,김종민,child,1
 김무성,김현경,child,1
+김무성,김현진,child,1
 김무성,최양옥,spouse,1
 김문희,현승혜,child,1
 김문희,현영원,spouse,1
@@ -479,6 +480,7 @@ source,target,rel,cur
 김현강,정정이,spouse,1
 김현경,이상균,spouse,1
 김현주,허윤영,spouse,1
+김현진,박제완,spouse,1
 김형국,박재숙,spouse,1
 김형남,김영호,child,1
 김형남,김창호,child,1
@@ -653,6 +655,7 @@ source,target,rel,cur
 박우병,박용훈,child,1
 박원석,서성희,spouse,1
 박유아,김형수,spouse,1
+박윤소,박제완,child,1
 박은경,장세홍,spouse,1
 박은형,김선협,spouse,1
 박은혜,허재명,spouse,1
@@ -685,6 +688,7 @@ source,target,rel,cur
 박정희,박재옥,child,1
 박정희,박지만,child,1
 박정희,육영수,spouse,1
+박제완,김현진,spouse,1
 박종구,이계옥,spouse,1
 박종주,조현아,spouse,1
 박지근,박XX3,child,1
@@ -1836,6 +1840,7 @@ source,target,rel,cur
 최양옥,김무성,spouse,1
 최양옥,김종민,child,1
 최양옥,김현경,child,1
+최양옥,김현진,child,1
 최영윤,이해창,spouse,1
 최예정,이동욱,spouse,1
 최용권,최영윤,child,1

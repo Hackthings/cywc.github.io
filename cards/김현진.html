@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>김현진 가계도</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/graph.css">
+  <link rel="stylesheet" type="text/css" href="/card.css">
+  <style>
+  * {box-sizing: border-box;}
+
+  html {
+	  font-family: sans-serif;
+	  font-size: 14px;
+	  line-height: 1.5;
+  }
+  body {
+	max-width: 50rem;
+  	margin: 2rem auto;
+	padding: 0 1rem;
+  }
+  h1, h2, h3 {
+  	margin: 2em 0 1em;
+  }
+  svg {
+  	font-size: 12px;
+  }
+  a {
+  	text-decoration: none;
+  }
+  .explore {
+  	font-size: 10px;
+	vertical-align: super;
+  }
+  nav {
+	border-top: 1px solid #EEE;
+	margin-top: 2rem;
+  }
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0.5rem 0;
+	font-size: 12px;
+	line-height: 1;
+  }
+  nav li {
+	float: left;
+	padding: 0 0.5rem;
+	border-right: 1px solid #666;
+  }
+  nav li:first-child {
+	  padding-left: 0;
+  }
+  nav li:last-child {
+	border-right-width: 0;
+  }
+  </style>
+  <script src="/js/vendor/d3.v3.min.js" charset="utf-8"></script>
+  <script src="/js/vendor/queue.min.js"></script>
+  <script src="/js/vendor/jsnetworkx.js"></script>
+  <script src="/js/kinship.js"></script>
+  <script src="/js/common.js"></script>
+</head>
+<body>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-71340893-1', 'auto');
+ga('send', 'pageview');
+</script>
+<div class="family-tree" itemscope="" itemtype="http://schema.org/Person"><h2 itemprop="name">김현진</h2><h3>태그</h3><ul><li class="tag">N/A</li></ul><h3>약력</h3><ul><li class="brief" itemprop="jobTitle">N/A</li></ul><h3>주요 혼맥</h3><ul><li class="path"><span>삼양인터내셔널 회장 <a href="/cards/%ED%97%88%EA%B4%91%EC%88%98" class="graphlet name" target="_blank">허광수</a>는 <a href="/cards/%EA%B9%80%ED%98%84%EC%A7%84" class="graphlet name" target="_blank">김현진</a>의 부친 새누리당 대표 <a href="/cards/%EA%B9%80%EB%AC%B4%EC%84%B1" class="graphlet name" target="_blank">김무성</a>의 외조부 전 조선일보 사장 <a href="/cards/%EB%B0%A9%EC%9D%91%EB%AA%A8" class="graphlet name" target="_blank">방응모</a>의 고손자며느리 <a href="/cards/%ED%97%88%EC%9C%A0%EC%A0%95" class="graphlet name" target="_blank">허유정</a>의 부친이다.&nbsp;<a href="/?q=%EA%B9%80%ED%98%84%EC%A7%84,%ED%97%88%EA%B4%91%EC%88%98" target="_blank" class="explore">[탐색]</a></span></li><li class="path"><span>조선일보 이사대우 <a href="/cards/%EB%B0%A9%EC%A4%80%EC%98%A4" class="graphlet name" target="_blank">방준오</a>는 <a href="/cards/%EA%B9%80%ED%98%84%EC%A7%84" class="graphlet name" target="_blank">김현진</a>의 부친 새누리당 대표 <a href="/cards/%EA%B9%80%EB%AC%B4%EC%84%B1" class="graphlet name" target="_blank">김무성</a>의 외조부 전 조선일보 사장 <a href="/cards/%EB%B0%A9%EC%9D%91%EB%AA%A8" class="graphlet name" target="_blank">방응모</a>의 고손자이다.&nbsp;<a href="/?q=%EA%B9%80%ED%98%84%EC%A7%84,%EB%B0%A9%EC%A4%80%EC%98%A4" target="_blank" class="explore">[탐색]</a></span></li></ul><h3>관련 페이지</h3><ul><li class="link"><a href="/?q=%EA%B9%80%ED%98%84%EC%A7%84">혼맥검색</a></li></ul><h3>가계도</h3><ul class="parents"><li class="parent family-node gender-male" itemprop="parent" itemscope="" itemtype="http://schema.org/Person"><a class="name" href="/cards/김무성.html"><span itemprop="name">김무성</span></a><span class="birth">1951-09-20</span><p class="brief" itemprop="jobTitle">새누리당 대표</p></li><li class="parent family-node gender-female" itemprop="parent" itemscope="" itemtype="http://schema.org/Person"><a class="name" href="/cards/최양옥.html"><span itemprop="name">최양옥</span></a><span class="birth">1955-01-01</span><p class="brief" itemprop="jobTitle">명지대 교수</p></li></ul><ul class="marriages"><li class="marriage"><div class="self family-node gender-female" itemscope="" itemtype="http://schema.org/Person"><a class="name" href="/cards/김현진.html"><span itemprop="name">김현진</span></a><span class="birth">1982-01-01</span><p class="brief" itemprop="jobTitle"></p></div><div class="spouse family-node gender-male" itemprop="spouse" itemscope="" itemtype="http://schema.org/Person"><a class="name" href="/cards/박제완.html"><span itemprop="name">박제완</span></a><span class="birth">1982-01-01</span><p class="brief" itemprop="jobTitle">엔케이 사업관리실장</p></div><ul class="children"></ul></li></ul></div>
+
+<nav>
+	<ul>
+		<li><a href="/">홈</a></li>
+		<li><a href="/sitemap.html">사이트맵</a></li>
+		<li><a href="https://github.com/cywc/cywc.github.io">소스코드 및 데이터</a></li>
+		<li><a href="http://goo.gl/forms/WPzhpd4gFK">제보하기</a></li>
+	</ul>
+</nav>
+
+</body>
+</html>
