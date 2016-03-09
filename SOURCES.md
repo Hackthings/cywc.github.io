@@ -9,4 +9,4 @@
 *   [재벌의 경영지배구조와 인맥 혼맥](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=576788)
 *   [친일과 망각: 뉴스타파](http://815.newstapa.org/#/)
 *   [비즈니스 포스트 인물검색](http://www.businesspost.co.kr/human/hd_list.html)
-
+*   [주간현대 유유상종 재계 혼맥도 시리즈](http://www.hyundaenews.com/search.html?submit=submit&search_and=1&search_exec=n_t&search_section=all&news_order=1&search=%C0%AF%C0%AF%BB%F3%C1%BE&imageField.x=0&imageField.y=0)

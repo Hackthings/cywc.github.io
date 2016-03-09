@@ -21,6 +21,9 @@ source,target,rel,cur
 고광천,최정원,spouse,1
 고병우,고소희,child,1
 고소희,김남구,spouse,1
+고승덕,고캔디,child,1
+고승덕,박유아,spouse,0
+고승덕,이무경,spouse,1
 고은희,이재우2,spouse,1
 고학래,고광천,child,1
 고현정,정용진,spouse,0
@@ -37,10 +40,14 @@ source,target,rel,cur
 구문정,박재영,spouse,1
 구미정,최병민,spouse,1
 구본능,강영혜,spouse,0
+구본능,구광모,child,1
+구본무,구연경,child,1
+구본무,김영식,spouse,1
 구본주,진상범,spouse,1
 구본천,이성은,spouse,1
 구선희,박용훈,spouse,1
 구순자,류지민,spouse,1
+구연경,윤윤관,spouse,1
 구영록,정영자,spouse,1
 구윤희,정대현,spouse,1
 구은아,이우성,spouse,1
@@ -49,8 +56,10 @@ source,target,rel,cur
 구은희,정일선,spouse,1
 구인회,구순자,child,1
 구인회,구자경,child,1
+구인회,구자극,child,1
 구인회,구자두,child,1
 구인회,구자승,child,1
+구인회,구자영,child,1
 구인회,구자일,child,1
 구인회,구자학,child,1
 구인회,구자혜,child,1
@@ -59,6 +68,7 @@ source,target,rel,cur
 구자경,구본무,child,1
 구자경,구훤미,child,1
 구자경,하정임,spouse,1
+구자극,조아란,spouse,1
 구자두,구본천,child,1
 구자두,이의숙,spouse,1
 구자명,구윤희,child,1
@@ -70,11 +80,15 @@ source,target,rel,cur
 구자승,홍승해,spouse,1
 구자열,구은아,child,1
 구자엽,구은희,child,1
+구자영,이재원2,spouse,1
+구자영,이재응,child,1
 구자은,장인영,spouse,1
 구자일,구본길,child,1
 구자일,구은미,child,1
+구자일,김청자,spouse,1
 구자철,홍정원,spouse,1
 구자학,구명진,child,1
+구자학,구지은,child,1
 구자학,이숙희1,spouse,1
 구자헌,구본호,child,1
 구자헌,조원희,spouse,1
@@ -137,6 +151,8 @@ source,target,rel,cur
 김고려,윤치오,spouse,1
 김광현,오현주,spouse,1
 김교숙,손경식,spouse,1
+김교숙,손주홍,child,1
+김교숙,손희영,child,1
 김교신,김정록,child,1
 김교철,김정렴,child,1
 김교철,김정호,child,1
@@ -284,6 +300,8 @@ source,target,rel,cur
 김영숙1,손명원,spouse,1
 김영숙1,손정희,child,1
 김영숙2,이재우1,spouse,1
+김영식,구본무,spouse,1
+김영식,구연경,child,1
 김영자,허광수,spouse,1
 김영자,허서홍,child,1
 김영자,허유정,child,1
@@ -438,7 +456,7 @@ source,target,rel,cur
 김중민,김태익,child,1
 김중산,김영경,spouse,1
 김중성,김은지,spouse,1
-김지연,이재원,spouse,1
+김지연,이재원1,spouse,1
 김지용,정유희,spouse,1
 김진구,김복기,child,1
 김진구,김유기,child,1
@@ -446,6 +464,7 @@ source,target,rel,cur
 김진만,김준기,child,1
 김진만,김택기,child,1
 김진만,김희선,child,1
+김진수,김청자,child,1
 김진재,김세연,child,1
 김진흥,김영기,child,1
 김진흥,김호기,child,1
@@ -454,6 +473,7 @@ source,target,rel,cur
 김창호,방선영,spouse,1
 김채헌,최영근,child,1
 김채헌,최윤원,spouse,1
+김청자,구자일,spouse,1
 김춘,김봉조,child,1
 김춘희,김XX3,child,1
 김춘희,김교신,child,1
@@ -461,6 +481,7 @@ source,target,rel,cur
 김치열,김윤희,child,1
 김치열,김형국,child,1
 김치열,김혜림,child,1
+김태동,김영식,child,1
 김태향,노병수,spouse,1
 김태향,노태우,child,1
 김태호,김미연,child,1
@@ -484,7 +505,7 @@ source,target,rel,cur
 김형국,박재숙,spouse,1
 김형남,김영호,child,1
 김형남,김창호,child,1
-김형수,박유아,spouse,1
+김형수,박근아,spouse,1
 김형신,박건배,spouse,1
 김형일,박정구,spouse,1
 김혜림,서원석,spouse,1
@@ -511,6 +532,8 @@ source,target,rel,cur
 나채성,나경민,child,1
 나채성,나경원,child,1
 나채성,정효자,spouse,1
+남XX1,조범석,child,1
+남XX1,조학기,spouse,1
 남궁억,남궁자경,child,1
 남궁자경,윤광선,spouse,1
 남궁자경,윤성희,child,1
@@ -520,6 +543,8 @@ source,target,rel,cur
 남상수,남석우,child,1
 남상옥,남덕자,child,1
 남석우,정윤선,spouse,1
+남정한,남XX1,child,1
+남정한,남자현,child,1
 남흥우,남기윤,child,1
 남흥우,윤완구,spouse,1
 노경수,정숙영,spouse,1
@@ -593,6 +618,7 @@ source,target,rel,cur
 박귀희,은희만,child,1
 박근령,류청,spouse,0
 박근령,신동욱,spouse,1
+박근아,김형수,spouse,1
 박남규,박재숙,child,1
 박내회,서송숙,spouse,0
 박담회,박원재,child,1
@@ -654,7 +680,8 @@ source,target,rel,cur
 박용훈,구선희,spouse,1
 박우병,박용훈,child,1
 박원석,서성희,spouse,1
-박유아,김형수,spouse,1
+박유아,고승덕,spouse,0
+박유아,고캔디,child,1
 박윤소,박제완,child,1
 박은경,장세홍,spouse,1
 박은형,김선협,spouse,1
@@ -701,6 +728,7 @@ source,target,rel,cur
 박태규,장은순,spouse,1
 박태원,조도원,spouse,1
 박태준,박경아,child,1
+박태준,박근아,child,1
 박태준,박성빈2,child,1
 박태준,박유아,child,1
 박현숙,방상훈,child,1
@@ -812,8 +840,14 @@ source,target,rel,cur
 선두훈,정성이,spouse,1
 성XX1,성주련,child,1
 성XX1,성주호,child,1
+성가은,손주홍,spouse,1
+성기학,성가은,child,1
+성기학,성래은,child,1
+성기학,성시은,child,1
+성기학,이선진,spouse,1
 성주호,김인중,spouse,1
 손경식,김교숙,spouse,1
+손경식,손주홍,child,1
 손경식,손희영,child,1
 손경재,김종빈,spouse,1
 손명원,김영숙1,spouse,1
@@ -829,6 +863,7 @@ source,target,rel,cur
 손정도,손인실,child,1
 손정도,손진실,child,1
 손정희,홍정욱,spouse,1
+손주홍,성가은,spouse,1
 손진실,윤종선,child,1
 손진실,윤치장,spouse,1
 손창환,손경재,child,1
@@ -869,6 +904,7 @@ source,target,rel,cur
 신수아,김남정,spouse,1
 신수연,이승무,spouse,1
 신연균,홍석현,spouse,1
+신연균,홍정도,child,1
 신연균,홍정현,child,1
 신영수,신기철,child,1
 신영자,장오식,spouse,0
@@ -1039,6 +1075,7 @@ source,target,rel,cur
 윤웅렬,윤치호,child,1
 윤원선,이진완,spouse,1
 윤원영,임경자,spouse,1
+윤윤관,구연경,spouse,1
 윤인선,윤인구,child,1
 윤일선,윤영구1,child,1
 윤일선,윤용구2,child,1
@@ -1086,6 +1123,7 @@ source,target,rel,cur
 윤치호,윤보희,child,1
 윤치호,윤영선1,child,1
 윤치호,윤장선,child,1
+윤태수,윤윤관,child,1
 윤택선,윤창구,child,1
 윤택선,윤철구,child,1
 윤화순,강석천,spouse,1
@@ -1167,6 +1205,7 @@ source,target,rel,cur
 이모임,윤선희,child,1
 이모임,윤연선,child,1
 이모임,윤치왕,spouse,1
+이무경,고승덕,spouse,1
 이문옥,박XX1,spouse,1
 이문조,이경숙,spouse,1
 이문호,이XX4,child,1
@@ -1189,6 +1228,8 @@ source,target,rel,cur
 이병철,이인희,child,1
 이병철,이창희,child,1
 이병호,이숙희2,child,1
+이보형,이재원2,child,1
+이보형,이재응,child,1
 이복영,이우성,child,1
 이복영,이원준,child,1
 이봉서,송원자,spouse,1
@@ -1221,6 +1262,10 @@ source,target,rel,cur
 이선영,방혜성,child,1
 이선영,방혜신,child,1
 이선용,오은주,spouse,1
+이선진,성가은,child,1
+이선진,성기학,spouse,1
+이선진,성래은,child,1
+이선진,성시은,child,1
 이선희,이부용,spouse,1
 이성은,구본천,spouse,1
 이성호1,주금순,spouse,1
@@ -1234,6 +1279,7 @@ source,target,rel,cur
 이숙경,윤일선,child,1
 이숙희1,구명진,child,1
 이숙희1,구자학,spouse,1
+이숙희1,구지은,child,1
 이숙희2,조지호,spouse,1
 이숙희3,이응선,spouse,1
 이순자,전두환,spouse,1
@@ -1320,7 +1366,9 @@ source,target,rel,cur
 이재용,임세령,spouse,0
 이재우1,김영숙2,spouse,1
 이재우2,고은희,spouse,1
-이재원,김지연,spouse,1
+이재원1,김지연,spouse,1
+이재원2,구자영,spouse,1
+이재응,이서진,child,1
 이재준,이부용,child,1
 이재준,이준용1,child,1
 이재찬,최선희,spouse,1
@@ -1363,7 +1411,7 @@ source,target,rel,cur
 이지은,오정석,spouse,1
 이진완,윤원선,spouse,1
 이창희,이재관,child,1
-이창희,이재원,child,1
+이창희,이재원1,child,1
 이창희,이재찬,child,1
 이창희,이혜진,child,1
 이철,장윤희,spouse,1
@@ -1630,6 +1678,7 @@ source,target,rel,cur
 정영삼,홍지자,spouse,1
 정영자,구영록,spouse,1
 정용진,고현정,spouse,0
+정용진,한지희,spouse,1
 정유경1,문성욱,spouse,1
 정유경2,김종엽,spouse,1
 정유희,김지용,spouse,1
@@ -1712,6 +1761,7 @@ source,target,rel,cur
 조명희2,이혜진,spouse,1
 조미연,구윤희,child,1
 조미연,구자명,spouse,1
+조범석,조운해,child,1
 조병준,조해형,child,1
 조석래,송광자,spouse,1
 조석래,조현문,child,1
@@ -1719,6 +1769,7 @@ source,target,rel,cur
 조석래,조현준,child,1
 조성근,조남숙,child,1
 조수호,최은영,spouse,1
+조아란,구자극,spouse,1
 조양래,조현범,child,1
 조양래,홍문자,spouse,1
 조양호,이명희2,spouse,1
@@ -1754,6 +1805,9 @@ source,target,rel,cur
 조중훈,조현숙,child,1
 조지호,이숙희2,spouse,1
 조진호,이경아,spouse,1
+조필대,조아란,child,1
+조학기,남XX1,spouse,1
+조학기,조범석,child,1
 조해형,김인숙,spouse,1
 조현범,이수연,spouse,1
 조현숙,이재훈2,child,1
@@ -1915,6 +1969,7 @@ source,target,rel,cur
 한병기,한유진,child,1
 한병기,한태준,child,1
 한병기,한태현,child,1
+한상범,한지희,child,1
 한상은,김세연,spouse,1
 한상준,이희현,spouse,1
 한상태,한준희,child,1
@@ -1935,6 +1990,7 @@ source,target,rel,cur
 한인옥,이회창,spouse,1
 한준희,김석동,spouse,1
 한지현,김휘,spouse,1
+한지희,정용진,spouse,1
 한진숙,윤노덕,child,1
 한진숙,윤영렬,spouse,1
 한진숙,윤치명,child,1
