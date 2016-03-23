@@ -205,6 +205,7 @@ source,target,rel,cur
 김무성,김현경,child,1
 김무성,김현진,child,1
 김무성,최양옥,spouse,1
+김문평,김순남,spouse,1
 김문희,현승혜,child,1
 김문희,현영원,spouse,1
 김문희,현일선,child,1
@@ -219,6 +220,7 @@ source,target,rel,cur
 김병관,김재열1,child,1
 김병관,김재호1,child,1
 김병관,김태령,child,1
+김병로,김순남,child,1
 김병로,김재열2,child,1
 김복동,김미경1,child,1
 김봉환,김교숙,child,1
@@ -269,6 +271,7 @@ source,target,rel,cur
 김소영,박정원,spouse,1
 김수연,이우현,spouse,1
 김수혜,정몽용,spouse,1
+김순남,김문평,spouse,1
 김순영,곽낙원,spouse,1
 김순영,김구,child,1
 김승연,김동관,child,1
